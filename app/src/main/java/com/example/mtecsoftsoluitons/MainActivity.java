@@ -107,4 +107,11 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    private void sendDataToFragment() {
+        Bundle bundle = new Bundle();
+        bundle.putString("key", "i am bundle data");
+        ChatsFragment fragment = new ChatsFragment();
+        fragment.setArguments(bundle);
+    }
 }
