@@ -44,7 +44,8 @@ public class TabsAdapter extends FragmentPagerAdapter {
                 return "CALLS";
             case 3:
                 return "Notifications";
+            default:
+                return null;
         }
-        return null;
     }
 }

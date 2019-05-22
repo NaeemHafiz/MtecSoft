@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         viewPager = findViewById(R.id.viewpager);
         tabsAdapter = new TabsAdapter(getSupportFragmentManager());
+        viewPager.setOffscreenPageLimit(2);
         viewPager.setAdapter(tabsAdapter);
         tabLayout = findViewById(R.id.tablayout);
         tabLayout.setupWithViewPager(viewPager);
